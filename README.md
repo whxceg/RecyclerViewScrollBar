@@ -51,3 +51,5 @@ rsbOrientation |  ScrollBar方向（水平（默认）、垂直）
             app:rsbTrackColor="@color/colorPrimaryDark"
     />
 ```
+* 截图
+![image](https://github.com/whxceg/RecyclerViewScrollBar/blob/master/screenshot/device-2019-05-15-164905.png)
