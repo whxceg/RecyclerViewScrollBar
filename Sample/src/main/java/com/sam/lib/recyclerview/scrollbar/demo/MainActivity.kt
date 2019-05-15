@@ -24,13 +24,13 @@ class MainActivity : AppCompatActivity() {
     private fun horizontalScrollBar(){
         mRecyclerView.adapter = ItemAdapter(20)
         mRecyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-//        mScrollBar.bindRecyclerView(mRecyclerView)
+        mScrollBar.attachToRecyclerView(mRecyclerView)
     }
 
     private fun verticalScrollBar(){
         mRecyclerView2.adapter = ItemAdapter(40)
         mRecyclerView2.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        mScrollBar2.bindRecyclerView(mRecyclerView2)
+        mScrollBar2.attachToRecyclerView(mRecyclerView2)
     }
 
 

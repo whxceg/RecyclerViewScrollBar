@@ -111,7 +111,7 @@ public class RecyclerViewScrollBar extends View {
 
     }
 
-    public void bindRecyclerView(@Nullable RecyclerView recyclerView) {
+    public void attachToRecyclerView(@Nullable RecyclerView recyclerView) {
         if (mRecyclerView == recyclerView) {
             return;
         }
