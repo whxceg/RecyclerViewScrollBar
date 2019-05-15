@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RecyclerViewScrollBar">
+        <attr name="rsbTrackDrawable" format="reference|color"/>
+        <attr name="rsbThumbDrawable" format="reference|color"/>
+        <attr name="rsbRadio" format="dimension"/>
+        <attr name="rsbTrackColor" format="color"/>
+        <attr name="rsbThumbColor" format="color"/>
+        <attr name="rsbOrientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

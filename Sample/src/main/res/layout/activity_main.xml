@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.sam.lib.recyclerview.scrollbar.RecyclerViewScrollBar
+            android:id="@+id/mScrollBar"
+            app:layout_constraintTop_toBottomOf="@+id/mRecyclerView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="100dp"
+            android:layout_height="5dp"
+            app:rsbThumbDrawable="@drawable/scroll_bar_thumb"
+            app:rsbTrackDrawable="@drawable/scroll_bar_track"
+    />
+
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mScrollBar"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.sam.lib.recyclerview.scrollbar.RecyclerViewScrollBar
+            android:id="@+id/mScrollBar2"
+            app:layout_constraintTop_toTopOf="@+id/mRecyclerView2"
+            app:layout_constraintBottom_toBottomOf="@+id/mRecyclerView2"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="5dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="5dp"
+            app:rsbRadio="5dp"
+            app:rsbThumbColor="@color/colorAccent"
+            app:rsbOrientation="vertical"
+            app:rsbTrackColor="@color/colorPrimaryDark"
+    />
+
+</android.support.constraint.ConstraintLayout>
